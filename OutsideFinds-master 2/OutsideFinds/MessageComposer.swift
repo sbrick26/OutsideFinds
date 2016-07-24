@@ -11,7 +11,7 @@ import MessageUI
 var storedImage = UIPasteboard.generalPasteboard().image
 
 
-let textMessageRecipients = [phoneNum] // for pre-populating the recipients list (optional, depending on your needs)
+let textMessageRecipients = ["215-431-3030"] // for pre-populating the recipients list (optional, depending on your needs)
 
 class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
     

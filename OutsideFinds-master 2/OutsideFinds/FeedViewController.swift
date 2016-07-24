@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-var phoneNum = "4697197413"
+var phoneNum = "2154313030"
 var lostObject = ""
 var state = false
 var indexNum = 0
@@ -206,9 +206,11 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     currentPost.name = object["itemName"] as! String
                     currentPost.description = object["itemDescription"] as! String
                     currentPost.price = object["itemPrice"] as! String
-                    phoneNum = currentPost.user["phoneNumber"] as! String //if phone number screws up i think its here
+                    currentPost.number = object["phoneNumber"] as! String //if phone number screws up i think its here
+                  //  phoneNum = currentPost.number
                     lostObject = currentPost.name
                     currentPost.user = object["user"] as! PFUser
+                    
                     
                     //object.save()
                     
