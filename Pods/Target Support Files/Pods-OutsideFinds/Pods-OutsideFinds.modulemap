@@ -1,6 +1,0 @@
-framework module Pods_OutsideFinds {
-  umbrella header "Pods-OutsideFinds-umbrella.h"
-
-  export *
-  module * { export * }
-}
