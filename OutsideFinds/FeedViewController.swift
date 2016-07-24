@@ -12,11 +12,36 @@ import Parse
 var phoneNum = "4697197413"
 var lostObject = ""
 
-
+var timer: NSTimer!
+var refresher: UIRefreshControl!
 
 class FeedViewController: UIViewController, UITableViewDataSource {
     
     var posts: [Post] = []
+    
+    func timeRefresh() {
+        self.tableview.reloadData()
+    }
+    
+    func refresh() {
+        
+        posts = []
+        getPosts{(success: Bool) in
+            
+            print("RUNNING GET POSTS")
+            if success {
+                dispatch_async(dispatch_get_main_queue(),{
+                    print("here are the posts \(self.posts)")
+                })
+            }
+            
+            
+            
+        }
+        self.tableview.reloadData()
+        refresher.endRefreshing()
+    }
+    
     
 
     @IBOutlet weak var tableview: UITableView!
@@ -35,13 +60,22 @@ class FeedViewController: UIViewController, UITableViewDataSource {
             
             
         }
+        
+       
 
         let triggerTime = (Int64(NSEC_PER_SEC) * 1)
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
             self.tableview.reloadData()
         })
         
-                tableview.dataSource = self
+         timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(timeRefresh), userInfo: nil, repeats: true)
+        
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableview.addSubview(refresher)
+        refresh()
+        tableview.dataSource = self
 
     }
     
