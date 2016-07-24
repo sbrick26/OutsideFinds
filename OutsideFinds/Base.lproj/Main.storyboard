@@ -197,6 +197,9 @@
                                     <constraint firstAttribute="height" constant="49" id="eqc-Bc-ZBl"/>
                                 </constraints>
                                 <state key="normal" title="Found This Item!"/>
+                                <connections>
+                                    <action selector="sendPicture:" destination="SOV-1V-imM" eventType="touchUpInside" id="TUJ-W7-YRG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

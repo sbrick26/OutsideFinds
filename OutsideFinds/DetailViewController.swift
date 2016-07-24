@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class DetailViewController: UIViewController {
     var post: Post?
 
@@ -32,11 +34,19 @@ class DetailViewController: UIViewController {
         nameLabel.text! = (post?.name)!
         priceLabel.text! = (post?.price)!
         descriptionView.text! = (post?.description)!
+    }
+    
+    var photoTakingHelper: PhotoTakingHelper!
+    
+    @IBAction func sendPicture(sender: AnyObject) {
+        self.photoTakingHelper = PhotoTakingHelper(viewController: self) {(image:UIImage?) in
+        }
         
         
         
     }
     
+    }
 
     /*
     // MARK: - Navigation
@@ -48,4 +58,4 @@ class DetailViewController: UIViewController {
     }
     */
 
-}
+

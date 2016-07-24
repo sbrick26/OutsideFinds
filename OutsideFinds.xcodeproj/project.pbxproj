@@ -23,6 +23,7 @@
 		C4553F991D445774005721EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F981D445774005721EA /* Post.swift */; };
 		C457B9DC1D4485C2006CA009 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DB1D4485C2006CA009 /* DetailViewController.swift */; };
 		C457B9DE1D448843006CA009 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DD1D448843006CA009 /* FirstViewController.swift */; };
+		C457B9E01D44997E006CA009 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		C4553F981D445774005721EA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C457B9DB1D4485C2006CA009 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C457B9DD1D448843006CA009 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C4553F771D442546005721EA /* AppDelegate.swift */,
+				C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */,
 				C4553F791D442546005721EA /* ViewController.swift */,
 				C4553F7B1D442546005721EA /* Main.storyboard */,
 				C4553F811D442546005721EA /* Assets.xcassets */,
@@ -248,6 +251,7 @@
 				C4553F971D4452A4005721EA /* PostTableViewCell.swift in Sources */,
 				C4553F7A1D442546005721EA /* ViewController.swift in Sources */,
 				C4553F911D443E20005721EA /* LoginViewController.swift in Sources */,
+				C457B9E01D44997E006CA009 /* PhotoTakingHelper.swift in Sources */,
 				C4553F991D445774005721EA /* Post.swift in Sources */,
 				C457B9DC1D4485C2006CA009 /* DetailViewController.swift in Sources */,
 				C4553F931D444572005721EA /* FeedViewController.swift in Sources */,
