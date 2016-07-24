@@ -1,0 +1,18 @@
+PODS:
+  - Bolts/Tasks (1.8.4)
+  - Parse (1.14.1):
+    - Bolts/Tasks (~> 1.8)
+  - Stripe (8.0.2)
+
+DEPENDENCIES:
+  - Parse
+  - Stripe
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Parse: 4f72b1c01b3fc9038bea045681b6cc1b070c081e
+  Stripe: 3dfcde17037996e00db0a2f6dbfdedb7ad2ae55b
+
+PODFILE CHECKSUM: 5b1a83113b8b7521995f43a3f28687e40426b79e
+
+COCOAPODS: 1.0.1
