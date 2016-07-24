@@ -35,6 +35,9 @@ class DetailViewController: UIViewController {
         
         print("HEY")
         
+        foundButton.titleLabel?.text = "Found This Item!"
+
+        
         setStatusBarBackgroundColor((UIColor(colorLiteralRed: 28/255, green: 228/255, blue: 208/255, alpha: 1)))
 
         // Do any additional setup after loading the view.
@@ -42,16 +45,7 @@ class DetailViewController: UIViewController {
         
         foundButton.layer.cornerRadius = 25
         
-        if state == true {
-            foundButton.titleLabel?.text = "I Recieved the Item"
-            
-            
-        }
-        else {
-            foundButton.titleLabel?.text = "Found This Item"
-            
-        }
-
+       
         
 //        if post!.user == PFUser.currentUser()! {
 //            print("Current")
@@ -59,6 +53,11 @@ class DetailViewController: UIViewController {
 //        else {
 //            print("Not current user")
 //        }
+        if state == true {
+            foundButton.setTitle("I Recieved the Item", forState: UIControlState.Normal)
+            foundButton.setTitle("I Recieved the Item", forState: UIControlState.Highlighted)
+            
+        }
         
         
     
@@ -147,6 +146,7 @@ class DetailViewController: UIViewController {
     }
         else {
             // delete post
+            print("DELETE")
             
             
         }

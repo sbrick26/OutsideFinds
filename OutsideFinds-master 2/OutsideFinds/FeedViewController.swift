@@ -51,7 +51,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         UIApplication.sharedApplication().statusBarHidden = false
         
-        
+
         
         setStatusBarBackgroundColor((UIColor(colorLiteralRed: 28/255, green: 228/255, blue: 208/255, alpha: 1)))
                 
@@ -71,6 +71,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         refresh()
         tableview.dataSource = self
 
+        
     }
     
     
@@ -130,16 +131,19 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                 
                     if post.user.objectId == PFUser.currentUser()!.objectId {
                         print("Current")
-                        var state = true
-                        
+                        state = true
                     }
                     else {
                         print("Not current user")
                         print("POST USER: \(post.user)")
                         print("CURRENT USER: \(PFUser.currentUser())")
-                        var state = false
+                        state = false
+                        
+                        
                         
                     }
+                               
+
                 
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 // 4
