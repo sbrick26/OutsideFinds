@@ -162,7 +162,14 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="barTintColor" red="0.10980392160000001" green="0.89411764709999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Bounty" id="XIS-Z9-5fm"/>
+                                    <navigationItem title="Bounty" id="XIS-Z9-5fm">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="iui-qK-MJT">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="logOut:" destination="qJy-im-oh8" id="vwJ-v2-Wki"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>

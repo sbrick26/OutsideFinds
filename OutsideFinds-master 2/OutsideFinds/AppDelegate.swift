@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+            
+            
+
+        
         NSThread.sleepForTimeInterval(0.5)
         
         STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_gdYTzsbpPveg1ZjxOG6WX8bX"

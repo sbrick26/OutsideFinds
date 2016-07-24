@@ -120,6 +120,12 @@ class FeedViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    @IBAction func logOut(sender: UIBarButtonItem) {
+        PFUser.logOutInBackground()
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("FirstViewController") // again change to your view
+        self.showViewController(vc as! FirstViewController, sender: vc) // change again
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {

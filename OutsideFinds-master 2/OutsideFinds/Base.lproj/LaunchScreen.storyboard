@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollaz_360 " translatesAutoresizingMaskIntoConstraints="NO" id="oey-ck-gKs">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dollaz_360 .png" translatesAutoresizingMaskIntoConstraints="NO" id="PUY-hf-B37">
+                                <rect key="frame" x="237" y="254" width="126" height="106"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="b1O-of-cEy"/>
-                                    <constraint firstAttribute="height" constant="128" id="cdE-wn-Pa3"/>
+                                    <constraint firstAttribute="width" constant="126" id="bMd-4f-mFx"/>
+                                    <constraint firstAttribute="height" constant="91" id="fzU-N3-L7R"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cyan="0.47999999999999998" magenta="0.28000000000000003" yellow="0.0" black="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oey-ck-gKs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hxy-zi-fnE"/>
-                            <constraint firstItem="oey-ck-gKs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wzt-ge-HLA"/>
+                            <constraint firstItem="PUY-hf-B37" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="07i-1n-Kd5"/>
+                            <constraint firstItem="PUY-hf-B37" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="39R-UO-evh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dollaz_360 " width="360" height="340"/>
+        <image name="dollaz_360 .png" width="360" height="340"/>
     </resources>
 </document>

@@ -128,7 +128,7 @@ class DetailViewController: UIViewController {
         }
             
                 else {
-            detailLabel!.text! = "Make sure to pay the person who is returning your lost item!"
+            detailLabel!.text! = "Make sure to pay the person \(post?.price) who is returning your lost item!"
                 modalView.hidden = false
                 UIView.animateWithDuration(0.5, animations: {
                     self.modalView.center.y -= self.view.bounds.height - 650
@@ -166,7 +166,13 @@ class DetailViewController: UIViewController {
                 }
             }
             
-            self.performSegueWithIdentifier("toFeed", sender: self)            // go to feed
+          
+            self.performSegueWithIdentifier("toFeed", sender: self)
+            
+            
+            
+            
+            // go to feed
           //  let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("TabBarController") // again change to your view
            //  self.showViewController(vc as! UITabBarController, sender: vc) // change again
         

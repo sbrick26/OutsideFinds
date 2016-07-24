@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		24B773421D452C94001BD399 /* dollaz_360 .png in Resources */ = {isa = PBXBuildFile; fileRef = 24B773411D452C94001BD399 /* dollaz_360 .png */; };
+		24B773441D455DB1001BD399 /* dollaz.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24B773431D455DB1001BD399 /* dollaz.gif */; };
+		24B7735A1D45634C001BD399 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B773591D45634C001BD399 /* LaunchScreenViewController.swift */; };
 		A837253D62F779641AC32DA1 /* Pods_OutsideFinds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */; };
 		C4553F781D442546005721EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F771D442546005721EA /* AppDelegate.swift */; };
 		C4553F7A1D442546005721EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F791D442546005721EA /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		204BBC9A618E1D6736EE5CDD /* Pods-OutsideFinds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.release.xcconfig"; sourceTree = "<group>"; };
 		24B773411D452C94001BD399 /* dollaz_360 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollaz_360 .png"; sourceTree = "<group>"; };
+		24B773431D455DB1001BD399 /* dollaz.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dollaz.gif; sourceTree = "<group>"; };
+		24B773591D45634C001BD399 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutsideFinds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F741D442546005721EA /* OutsideFinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutsideFinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F771D442546005721EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		C4553F761D442546005721EA /* OutsideFinds */ = {
 			isa = PBXGroup;
 			children = (
+				24B773431D455DB1001BD399 /* dollaz.gif */,
 				C4553F771D442546005721EA /* AppDelegate.swift */,
 				C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */,
 				C4553F791D442546005721EA /* ViewController.swift */,
@@ -127,6 +132,7 @@
 				C457B9DB1D4485C2006CA009 /* DetailViewController.swift */,
 				C457B9DD1D448843006CA009 /* FirstViewController.swift */,
 				C457B9E11D44A052006CA009 /* MessageComposer.swift */,
+				24B773591D45634C001BD399 /* LaunchScreenViewController.swift */,
 			);
 			path = OutsideFinds;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			files = (
 				C4553F851D442546005721EA /* LaunchScreen.storyboard in Resources */,
 				C4553F821D442546005721EA /* Assets.xcassets in Resources */,
+				24B773441D455DB1001BD399 /* dollaz.gif in Resources */,
 				24B773421D452C94001BD399 /* dollaz_360 .png in Resources */,
 				C4553F7D1D442546005721EA /* Main.storyboard in Resources */,
 				C4553F8F1D4434C6005721EA /* BadMofo.ttf in Resources */,
@@ -262,6 +269,7 @@
 				C4553F971D4452A4005721EA /* PostTableViewCell.swift in Sources */,
 				C4553F7A1D442546005721EA /* ViewController.swift in Sources */,
 				C4553F911D443E20005721EA /* LoginViewController.swift in Sources */,
+				24B7735A1D45634C001BD399 /* LaunchScreenViewController.swift in Sources */,
 				C457B9E01D44997E006CA009 /* PhotoTakingHelper.swift in Sources */,
 				C457B9E21D44A052006CA009 /* MessageComposer.swift in Sources */,
 				C4553F991D445774005721EA /* Post.swift in Sources */,
