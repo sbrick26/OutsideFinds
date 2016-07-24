@@ -18,6 +18,9 @@ var itemImage: UIImage = UIImage(named: "Feed")!
 
 class DetailViewController: UIViewController {
     var post: Post?
+    
+    @IBOutlet weak var modalView: UIView!
+    @IBOutlet weak var gotitButton: UIButton!
 
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -27,6 +30,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        modalView.hidden = true
+        
     
     }
     func sendMessageCalled() {
@@ -65,23 +70,40 @@ class DetailViewController: UIViewController {
         nameLabel.text! = (post?.name)!
         priceLabel.text! = (post?.price)!
         descriptionView.text! = (post?.description)!
+        
+        modalView.layer.cornerRadius = 15
+        gotitButton.layer.cornerRadius = 20
     }
     
     var photoTakingHelper: PhotoTakingHelper!
     let messageComposer = MessageComposer()
     
     @IBAction func sendPicture(sender: AnyObject) {
+        
+        modalView.hidden = false
+            UIView.animateWithDuration(0.5, animations: {
+            self.modalView.center.y -= self.view.bounds.height
+                
+            
+                
+                
+            })
+        
+        
+        
+        
+        }
+    
+    @IBAction func sendIt(sender: AnyObject) {
         self.photoTakingHelper = PhotoTakingHelper(viewController: self) {(image:UIImage?) in
             guard let image = image else{
                 return
             }
             itemImage = image
             self.sendMessageCalled()
-            }
-        
-        
         }
-    
+
+    }
     
     }
 
