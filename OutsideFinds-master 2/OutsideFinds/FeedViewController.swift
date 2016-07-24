@@ -12,6 +12,9 @@ import Parse
 var phoneNum = "4697197413"
 var lostObject = ""
 var state = false
+var indexNum = 0
+var objectsGlobal: [PFObject] = []
+
 
 var timer: NSTimer!
 var refresher: UIRefreshControl!
@@ -126,12 +129,14 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                 // 1
                 let indexPath = tableview.indexPathForSelectedRow!
                 // 2
+                
                 let post = posts[indexPath.row]
                 // 3
                 
                     if post.user.objectId == PFUser.currentUser()!.objectId {
                         print("Current")
                         state = true
+                        indexNum = indexPath.row
                     }
                     else {
                         print("Not current user")
@@ -179,7 +184,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                 print(error.localizedDescription)
                 return
             }
-        
+            objectsGlobal = objects!
             print("objects: \(objects)")
             print("error: \(error)")
             
@@ -195,9 +200,24 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     currentPost.name = object["itemName"] as! String
                     currentPost.description = object["itemDescription"] as! String
                     currentPost.price = object["itemPrice"] as! String
-                    phoneNum = currentPost.user["phoneNumber"] as! String
+                    phoneNum = currentPost.user["phoneNumber"] as! String //if phone number screws up i think its here
                     lostObject = currentPost.name
                     currentPost.user = object["user"] as! PFUser
+                    
+                    //object.save()
+                    
+                    
+                    object.saveInBackgroundWithBlock { (success, error) -> Void in
+                        if success {
+                            var ojId = object.objectId
+                            currentPost.postId = ojId!
+                        }
+                    }
+                    
+                    
+                    
+                        
+                    
                     
                     self.posts.insert(currentPost, atIndex: 0)
                     print("\(self.posts.count)")
@@ -212,9 +232,9 @@ class FeedViewController: UIViewController, UITableViewDataSource {
 }
 
 
-    
 
-    
+
+
    
 
 

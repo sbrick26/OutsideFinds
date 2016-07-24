@@ -17,6 +17,7 @@ class Post{
     var price: String = ""
     var claimed: Bool = false
     var user: PFUser = PFUser.currentUser()!
+    var postId: String = ""
     
 }
 

@@ -267,7 +267,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="OpL-v7-fsL">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="9fH-3n-Fq3" kind="unwind" unwindAction="unwindToFeed:" id="nNL-BK-Smp"/>
+                                                <segue destination="9fH-3n-Fq3" kind="unwind" identifier="toFeed" unwindAction="unwindToFeed:" id="nNL-BK-Smp"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -467,6 +467,7 @@
                     <navigationItem key="navigationItem" id="4fp-z9-EMQ"/>
                     <connections>
                         <outlet property="descriptionView" destination="rLN-gu-zqC" id="sER-BX-SDL"/>
+                        <outlet property="detailLabel" destination="OZ2-Rf-Evu" id="3ao-gr-Z8F"/>
                         <outlet property="foundButton" destination="CRB-wN-25u" id="3Js-Kc-f2n"/>
                         <outlet property="gotitButton" destination="Lxu-yG-FF6" id="VPE-SI-Hck"/>
                         <outlet property="modalView" destination="lyZ-Hc-kX8" id="5vs-8i-MzU"/>
