@@ -12,6 +12,7 @@ class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

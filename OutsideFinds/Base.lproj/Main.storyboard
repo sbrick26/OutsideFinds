@@ -64,6 +64,7 @@
                                         <connections>
                                             <outlet property="descriptionLabel" destination="ITu-K8-9K3" id="Wl2-9q-IX9"/>
                                             <outlet property="itemLabel" destination="X6N-hL-DzH" id="nff-vK-nlm"/>
+                                            <outlet property="priceLabel" destination="XsB-SI-MO3" id="Nhc-UX-0K5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -80,6 +81,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kWZ-wC-54y"/>
+                    <connections>
+                        <outlet property="tableview" destination="Odo-lS-2J8" id="SiO-iN-bWq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAV-bn-VRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

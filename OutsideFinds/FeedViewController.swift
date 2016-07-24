@@ -7,29 +7,69 @@
 //
 
 import UIKit
+import Parse
+
+var posts: [Post] = []
 
 class FeedViewController: UIViewController {
 
+    @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        getPosts{(success: Bool) in
+            if success {
+                dispatch_async(dispatch_get_main_queue(),{
+                    print("here are the posts \(posts)")
+                })
+            }
+        
 
-        // Do any additional setup after loading the view.
+        
+    }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    func getPosts(success: (Bool) -> Void) {
+        let query = PFQuery(className: "Post")
+        query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+        
+            print("objects: \(objects)")
+            print("error: \(error)")
+            
+            
+            
+            if let actualObjects = objects {
+                
+                
+                for object in actualObjects {
+                    
+                    let currentPost = Post()
+                    
+                    currentPost.name = object["itemName"] as! String
+                    currentPost.description = object["itemDescription"] as! String
+                    currentPost.price = object["itemPrice"] as! String
+                    
+                    posts.append(currentPost)
+                    
+                }
+            }
+            
+        }
     }
-    */
-
 }
+
+
