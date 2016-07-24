@@ -118,7 +118,7 @@ class DetailViewController: UIViewController {
     let messageComposer = MessageComposer()
     
     @IBAction func sendPicture(sender: AnyObject) {
-        if foundButton.titleLabel?.text == "Found This Item!" {
+        if foundButton.titleLabel == "Found This Item!" {
             
         modalView.hidden = false
             detailLabel!.text! = "Please take a picture of the item to show the owner for visual confirmation that it was found."
@@ -128,8 +128,8 @@ class DetailViewController: UIViewController {
         }
             
                 else {
-            modalView.hidden = false
-            detailLabel!.text! = "Make sure to pay the person who is returning your lost item!"
+            detailLabel!.text! = "Make sure to pay the person \(post?.price) who is returning your lost item!"
+                modalView.hidden = false
                 UIView.animateWithDuration(0.5, animations: {
                     self.modalView.center.y -= self.view.bounds.height - 650
                 
@@ -142,7 +142,7 @@ class DetailViewController: UIViewController {
         }
     
     @IBAction func sendIt(sender: AnyObject) {
-        if foundButton.titleLabel!.text == "Found This Item!" {
+        if foundButton.titleLabel!.text == "Found This Item" {
         self.photoTakingHelper = PhotoTakingHelper(viewController: self) {(image:UIImage?) in
             guard let image = image else{
                 return
