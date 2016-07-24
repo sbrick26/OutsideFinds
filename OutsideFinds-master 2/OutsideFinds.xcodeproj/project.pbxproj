@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B773421D452C94001BD399 /* dollaz_360 .png in Resources */ = {isa = PBXBuildFile; fileRef = 24B773411D452C94001BD399 /* dollaz_360 .png */; };
 		A837253D62F779641AC32DA1 /* Pods_OutsideFinds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */; };
 		C4553F781D442546005721EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F771D442546005721EA /* AppDelegate.swift */; };
 		C4553F7A1D442546005721EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F791D442546005721EA /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		204BBC9A618E1D6736EE5CDD /* Pods-OutsideFinds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.release.xcconfig"; sourceTree = "<group>"; };
+		24B773411D452C94001BD399 /* dollaz_360 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollaz_360 .png"; sourceTree = "<group>"; };
 		47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutsideFinds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F741D442546005721EA /* OutsideFinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutsideFinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F771D442546005721EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				C4553F791D442546005721EA /* ViewController.swift */,
 				C4553F7B1D442546005721EA /* Main.storyboard */,
 				C4553F811D442546005721EA /* Assets.xcassets */,
+				24B773411D452C94001BD399 /* dollaz_360 .png */,
 				C4553F831D442546005721EA /* LaunchScreen.storyboard */,
 				C4553F861D442546005721EA /* Info.plist */,
 				C4553F7E1D442546005721EA /* OutsideFinds.xcdatamodeld */,
@@ -192,6 +195,7 @@
 			files = (
 				C4553F851D442546005721EA /* LaunchScreen.storyboard in Resources */,
 				C4553F821D442546005721EA /* Assets.xcassets in Resources */,
+				24B773421D452C94001BD399 /* dollaz_360 .png in Resources */,
 				C4553F7D1D442546005721EA /* Main.storyboard in Resources */,
 				C4553F8F1D4434C6005721EA /* BadMofo.ttf in Resources */,
 			);

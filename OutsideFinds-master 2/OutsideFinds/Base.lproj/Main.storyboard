@@ -49,10 +49,11 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsB-SI-MO3">
-                                                    <rect key="frame" x="483" y="3.5" width="76" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsB-SI-MO3">
+                                                    <rect key="frame" x="379" y="8" width="180" height="36.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="76" id="0By-7b-eeC"/>
+                                                        <constraint firstAttribute="width" constant="180" id="C7K-JF-IO3"/>
                                                         <constraint firstAttribute="width" constant="109" id="Lxm-MJ-4lv"/>
                                                         <constraint firstAttribute="height" constant="41" id="MAo-y4-9gh"/>
                                                         <constraint firstAttribute="width" constant="109" id="UkI-DV-hKg"/>
@@ -76,7 +77,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-K8-9K3">
-                                                    <rect key="frame" x="13" y="52" width="497" height="21"/>
+                                                    <rect key="frame" x="13" y="52.5" width="497" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39.5" id="EHd-hT-wZW"/>
                                                         <constraint firstAttribute="width" constant="584" id="oaU-Yg-FrI"/>
@@ -95,7 +96,7 @@
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="XsB-SI-MO3" secondAttribute="trailing" constant="17" id="2Bm-cc-Jav"/>
-                                                <constraint firstItem="XsB-SI-MO3" firstAttribute="top" secondItem="0Tu-Wy-x1Q" secondAttribute="topMargin" constant="-4.5" id="2j5-u8-5uY"/>
+                                                <constraint firstItem="XsB-SI-MO3" firstAttribute="top" secondItem="0Tu-Wy-x1Q" secondAttribute="topMargin" id="2j5-u8-5uY"/>
                                                 <constraint firstItem="X6N-hL-DzH" firstAttribute="leading" secondItem="0Tu-Wy-x1Q" secondAttribute="leadingMargin" constant="5" id="3Uc-ri-m2N"/>
                                                 <constraint firstItem="X6N-hL-DzH" firstAttribute="leading" secondItem="ITu-K8-9K3" secondAttribute="leading" id="3dd-h7-XgS"/>
                                                 <constraint firstItem="ITu-K8-9K3" firstAttribute="leading" secondItem="0Tu-Wy-x1Q" secondAttribute="leadingMargin" id="5Iq-kK-9we"/>
@@ -486,6 +487,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="qJy-im-oh8" kind="relationship" relationship="viewControllers" id="dhZ-aX-oqZ"/>
