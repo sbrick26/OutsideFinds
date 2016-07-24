@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A837253D62F779641AC32DA1 /* Pods_OutsideFinds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */; };
 		C4553F781D442546005721EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F771D442546005721EA /* AppDelegate.swift */; };
 		C4553F7A1D442546005721EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F791D442546005721EA /* ViewController.swift */; };
 		C4553F7D1D442546005721EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4553F7B1D442546005721EA /* Main.storyboard */; };
 		C4553F801D442546005721EA /* OutsideFinds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4553F7E1D442546005721EA /* OutsideFinds.xcdatamodeld */; };
 		C4553F821D442546005721EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4553F811D442546005721EA /* Assets.xcassets */; };
 		C4553F851D442546005721EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4553F831D442546005721EA /* LaunchScreen.storyboard */; };
+		C4553F8D1D44331D005721EA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F8C1D44331D005721EA /* SignupViewController.swift */; };
+		C4553F8F1D4434C6005721EA /* BadMofo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4553F8E1D4434C6005721EA /* BadMofo.ttf */; };
+		C4553F911D443E20005721EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F901D443E20005721EA /* LoginViewController.swift */; };
+		C4553F931D444572005721EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F921D444572005721EA /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204BBC9A618E1D6736EE5CDD /* Pods-OutsideFinds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.release.xcconfig"; sourceTree = "<group>"; };
+		47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutsideFinds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F741D442546005721EA /* OutsideFinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutsideFinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4553F771D442546005721EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4553F791D442546005721EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		C4553F811D442546005721EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4553F841D442546005721EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4553F861D442546005721EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4553F8C1D44331D005721EA /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C4553F8E1D4434C6005721EA /* BadMofo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BadMofo.ttf; sourceTree = "<group>"; };
+		C4553F901D443E20005721EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C4553F921D444572005721EA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A837253D62F779641AC32DA1 /* Pods_OutsideFinds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3317C56585C11B94E38FDA36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CACB7491EF0C8E4FDB08F5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */,
+				204BBC9A618E1D6736EE5CDD /* Pods-OutsideFinds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4553F6B1D442546005721EA = {
 			isa = PBXGroup;
 			children = (
+				C4553F8E1D4434C6005721EA /* BadMofo.ttf */,
 				C4553F761D442546005721EA /* OutsideFinds */,
 				C4553F751D442546005721EA /* Products */,
+				8CACB7491EF0C8E4FDB08F5E /* Pods */,
+				3317C56585C11B94E38FDA36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +96,9 @@
 				C4553F831D442546005721EA /* LaunchScreen.storyboard */,
 				C4553F861D442546005721EA /* Info.plist */,
 				C4553F7E1D442546005721EA /* OutsideFinds.xcdatamodeld */,
+				C4553F8C1D44331D005721EA /* SignupViewController.swift */,
+				C4553F901D443E20005721EA /* LoginViewController.swift */,
+				C4553F921D444572005721EA /* FeedViewController.swift */,
 			);
 			path = OutsideFinds;
 			sourceTree = "<group>";
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4553F891D442546005721EA /* Build configuration list for PBXNativeTarget "OutsideFinds" */;
 			buildPhases = (
+				AA1384CBDDBF340BF2389369 /* [CP] Check Pods Manifest.lock */,
 				C4553F701D442546005721EA /* Sources */,
 				C4553F711D442546005721EA /* Frameworks */,
 				C4553F721D442546005721EA /* Resources */,
+				27375A7108F9E47105579050 /* [CP] Embed Pods Frameworks */,
+				8F0A88E36A1B3C14886FC35D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,18 +168,70 @@
 				C4553F851D442546005721EA /* LaunchScreen.storyboard in Resources */,
 				C4553F821D442546005721EA /* Assets.xcassets in Resources */,
 				C4553F7D1D442546005721EA /* Main.storyboard in Resources */,
+				C4553F8F1D4434C6005721EA /* BadMofo.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27375A7108F9E47105579050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0A88E36A1B3C14886FC35D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1384CBDDBF340BF2389369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4553F701D442546005721EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4553F8D1D44331D005721EA /* SignupViewController.swift in Sources */,
 				C4553F801D442546005721EA /* OutsideFinds.xcdatamodeld in Sources */,
 				C4553F7A1D442546005721EA /* ViewController.swift in Sources */,
+				C4553F911D443E20005721EA /* LoginViewController.swift in Sources */,
+				C4553F931D444572005721EA /* FeedViewController.swift in Sources */,
 				C4553F781D442546005721EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +343,7 @@
 		};
 		C4553F8A1D442546005721EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OutsideFinds/Info.plist;
@@ -263,6 +355,7 @@
 		};
 		C4553F8B1D442546005721EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204BBC9A618E1D6736EE5CDD /* Pods-OutsideFinds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OutsideFinds/Info.plist;
@@ -291,6 +384,7 @@
 				C4553F8B1D442546005721EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
