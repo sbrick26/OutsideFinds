@@ -18,6 +18,8 @@
 		C4553F8F1D4434C6005721EA /* BadMofo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4553F8E1D4434C6005721EA /* BadMofo.ttf */; };
 		C4553F911D443E20005721EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F901D443E20005721EA /* LoginViewController.swift */; };
 		C4553F931D444572005721EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F921D444572005721EA /* FeedViewController.swift */; };
+		C4553F951D444D6B005721EA /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F941D444D6B005721EA /* CreateViewController.swift */; };
+		C4553F971D4452A4005721EA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F961D4452A4005721EA /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		C4553F8E1D4434C6005721EA /* BadMofo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BadMofo.ttf; sourceTree = "<group>"; };
 		C4553F901D443E20005721EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C4553F921D444572005721EA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C4553F941D444D6B005721EA /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		C4553F961D4452A4005721EA /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 				C4553F8C1D44331D005721EA /* SignupViewController.swift */,
 				C4553F901D443E20005721EA /* LoginViewController.swift */,
 				C4553F921D444572005721EA /* FeedViewController.swift */,
+				C4553F941D444D6B005721EA /* CreateViewController.swift */,
+				C4553F961D4452A4005721EA /* PostTableViewCell.swift */,
 			);
 			path = OutsideFinds;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 			files = (
 				C4553F8D1D44331D005721EA /* SignupViewController.swift in Sources */,
 				C4553F801D442546005721EA /* OutsideFinds.xcdatamodeld in Sources */,
+				C4553F951D444D6B005721EA /* CreateViewController.swift in Sources */,
+				C4553F971D4452A4005721EA /* PostTableViewCell.swift in Sources */,
 				C4553F7A1D442546005721EA /* ViewController.swift in Sources */,
 				C4553F911D443E20005721EA /* LoginViewController.swift in Sources */,
 				C4553F931D444572005721EA /* FeedViewController.swift in Sources */,
