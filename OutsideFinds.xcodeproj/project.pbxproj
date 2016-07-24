@@ -25,6 +25,7 @@
 		C457B9DE1D448843006CA009 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DD1D448843006CA009 /* FirstViewController.swift */; };
 		C457B9E01D44997E006CA009 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */; };
 		C457B9E21D44A052006CA009 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9E11D44A052006CA009 /* MessageComposer.swift */; };
+		C457B9E41D44B83A006CA009 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C457B9E31D44B83A006CA009 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		C457B9DD1D448843006CA009 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C457B9DF1D44997E006CA009 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		C457B9E11D44A052006CA009 /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
+		C457B9E31D44B83A006CA009 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C457B9E41D44B83A006CA009 /* MessageUI.framework in Frameworks */,
 				A837253D62F779641AC32DA1 /* Pods_OutsideFinds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +70,7 @@
 		3317C56585C11B94E38FDA36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C457B9E31D44B83A006CA009 /* MessageUI.framework */,
 				47722F6746882A22323C5E8A /* Pods_OutsideFinds.framework */,
 			);
 			name = Frameworks;

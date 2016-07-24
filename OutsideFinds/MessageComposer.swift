@@ -8,6 +8,9 @@
 import Foundation
 import MessageUI
 
+var storedImage = UIPasteboard.generalPasteboard().image
+var lostItem = "WATCH"
+
 let textMessageRecipients = ["215-431-3030"] // for pre-populating the recipients list (optional, depending on your needs)
 
 class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
@@ -17,14 +20,55 @@ class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
         return MFMessageComposeViewController.canSendText()
     }
     
+   
+    
     // Configures and returns a MFMessageComposeViewController instance
     func configuredMessageComposeViewController() -> MFMessageComposeViewController {
-        let messageComposeVC = MFMessageComposeViewController()
+        var messageComposeVC = MFMessageComposeViewController()
         messageComposeVC.messageComposeDelegate = self  //  Make sure to set this property to self, so that the controller can be dismissed!
         messageComposeVC.recipients = textMessageRecipients
-        messageComposeVC.body = "Hey friend - Just sending a text message in-app using Swift!"
+        UIPasteboard.generalPasteboard().image = itemImage
+       storedImage = UIPasteboard.generalPasteboard().image
+    
+        
+        var pasteboard = UIPasteboard.generalPasteboard()
+        pasteboard.image = itemImage
+        
+        let imgData:NSData = UIImagePNGRepresentation(itemImage)!;
+        let dataString = imgData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
+        
+        func getDocumentsDirectory() -> NSString {
+            let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+            let documentsDirectory = paths[0]
+            return documentsDirectory
+        }
+        
+        if let image = UIImage(named: "example.png") {
+            if let data = UIImagePNGRepresentation(image) {
+                let filename = getDocumentsDirectory().stringByAppendingPathComponent("savedImage.png")
+                data.writeToFile(filename, atomically: true)
+            }
+        }
+        messageComposeVC.body? = "Hey! I think I found your \(lostItem), check it out!"
+        messageComposeVC.addAttachmentData(imgData, typeIdentifier: "image/png", filename: "savedImage.png")
+        
+        
+//    
+//        messageComposeVC.body?.dataUsingEncoding(UInt(dataString)!)
+        
+        //var pasteData: NSData = UIPasteboard.generalPasteboard().image(dataForPasteboardType: String(dataString))
+
+        
+//        
+//        var pasteData: NSData = UIPasteboard.generalPasteboard().dataForPasteboardType(dataString)?
+//       messageComposeVC = pasteboard.image
+//        UITextDocumentProxy += pasteboard.image
+        
+        
+        
+        
         return messageComposeVC
-    }
+            }
     
     // MFMessageComposeViewControllerDelegate callback - dismisses the view controller when the user is finished with it
     func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
