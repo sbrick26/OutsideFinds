@@ -86,7 +86,28 @@ class FeedViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            if identifier == "toDetail" {
+                print("Table view cell tapped")
+                
+                // 1
+                let indexPath = tableview.indexPathForSelectedRow!
+                // 2
+                let post = posts[indexPath.row]
+                // 3
+                let detailViewController = segue.destinationViewController as! DetailViewController
+                // 4
+                detailViewController.post = post
+                
+            }
+        }
+    }
+
+    
+    
     @IBAction func unwindToFeed(segue: UIStoryboardSegue) {
+        
     }
     
     

@@ -21,6 +21,8 @@
 		C4553F951D444D6B005721EA /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F941D444D6B005721EA /* CreateViewController.swift */; };
 		C4553F971D4452A4005721EA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F961D4452A4005721EA /* PostTableViewCell.swift */; };
 		C4553F991D445774005721EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4553F981D445774005721EA /* Post.swift */; };
+		C457B9DC1D4485C2006CA009 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DB1D4485C2006CA009 /* DetailViewController.swift */; };
+		C457B9DE1D448843006CA009 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B9DD1D448843006CA009 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		C4553F941D444D6B005721EA /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		C4553F961D4452A4005721EA /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C4553F981D445774005721EA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C457B9DB1D4485C2006CA009 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C457B9DD1D448843006CA009 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D7001DAFF8D7AD67838D0A52 /* Pods-OutsideFinds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutsideFinds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutsideFinds/Pods-OutsideFinds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +112,8 @@
 				C4553F981D445774005721EA /* Post.swift */,
 				C4553F941D444D6B005721EA /* CreateViewController.swift */,
 				C4553F961D4452A4005721EA /* PostTableViewCell.swift */,
+				C457B9DB1D4485C2006CA009 /* DetailViewController.swift */,
+				C457B9DD1D448843006CA009 /* FirstViewController.swift */,
 			);
 			path = OutsideFinds;
 			sourceTree = "<group>";
@@ -243,8 +249,10 @@
 				C4553F7A1D442546005721EA /* ViewController.swift in Sources */,
 				C4553F911D443E20005721EA /* LoginViewController.swift in Sources */,
 				C4553F991D445774005721EA /* Post.swift in Sources */,
+				C457B9DC1D4485C2006CA009 /* DetailViewController.swift in Sources */,
 				C4553F931D444572005721EA /* FeedViewController.swift in Sources */,
 				C4553F781D442546005721EA /* AppDelegate.swift in Sources */,
+				C457B9DE1D448843006CA009 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

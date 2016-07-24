@@ -9,11 +9,17 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    var post: Post?
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +27,17 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   
+    override func viewWillAppear(animated: Bool) {
+        
+        nameLabel.text! = (post?.name)!
+        priceLabel.text! = (post?.price)!
+        descriptionView.text! = (post?.description)!
+        
+        
+        
+    }
+    
+
     /*
     // MARK: - Navigation
 
