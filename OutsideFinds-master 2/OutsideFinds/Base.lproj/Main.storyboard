@@ -735,11 +735,19 @@
                                     <segue destination="Xov-oq-j3U" kind="show" id="qWq-QQ-IqK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollaz_360 " translatesAutoresizingMaskIntoConstraints="NO" id="4Nq-zJ-OAn">
+                                <rect key="frame" x="180" y="120" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="lH1-fD-UGj"/>
+                                    <constraint firstAttribute="height" constant="128" id="sWt-OO-fIu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.89411764705882346" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Nlq-TL-moU" firstAttribute="centerX" secondItem="XaB-Qu-W7b" secondAttribute="centerX" id="5M1-5a-Ba8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nlq-TL-moU" secondAttribute="trailing" constant="130" id="66U-B1-6Nq"/>
+                            <constraint firstItem="4Nq-zJ-OAn" firstAttribute="centerX" secondItem="XaB-Qu-W7b" secondAttribute="centerX" id="6Ae-3K-oDj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nlq-TL-moU" secondAttribute="trailing" constant="130" id="8BB-Ek-Ttq"/>
                             <constraint firstItem="Uiz-du-cL5" firstAttribute="top" secondItem="R5E-he-ljo" secondAttribute="bottom" constant="131" id="9yD-wL-XaD"/>
                             <constraint firstItem="Nlq-TL-moU" firstAttribute="leading" secondItem="XaB-Qu-W7b" secondAttribute="leadingMargin" constant="130" id="EEj-Mq-QUx"/>
@@ -757,6 +765,7 @@
                             <constraint firstItem="R5E-he-ljo" firstAttribute="top" secondItem="Nlq-TL-moU" secondAttribute="bottom" constant="8" id="o50-Ai-5KH"/>
                             <constraint firstItem="Nlq-TL-moU" firstAttribute="trailing" secondItem="R5E-he-ljo" secondAttribute="trailing" id="qNN-Bp-qtZ"/>
                             <constraint firstItem="Uiz-du-cL5" firstAttribute="top" secondItem="R5E-he-ljo" secondAttribute="bottom" constant="71" id="rFA-eZ-PUr"/>
+                            <constraint firstItem="4Nq-zJ-OAn" firstAttribute="top" secondItem="g7Z-LY-flU" secondAttribute="bottom" constant="100" id="rHg-45-OER"/>
                             <constraint firstItem="R5E-he-ljo" firstAttribute="centerX" secondItem="XaB-Qu-W7b" secondAttribute="centerX" id="vHD-Gy-6xk"/>
                             <constraint firstItem="R5E-he-ljo" firstAttribute="top" secondItem="Nlq-TL-moU" secondAttribute="bottom" constant="20" id="voS-VV-6OE"/>
                             <constraint firstItem="Uiz-du-cL5" firstAttribute="top" secondItem="R5E-he-ljo" secondAttribute="bottom" constant="131" id="wk5-5a-Cca"/>
@@ -1147,5 +1156,6 @@
     <resources>
         <image name="Add" width="48" height="48"/>
         <image name="Feed" width="45" height="45"/>
+        <image name="dollaz_360 " width="360" height="340"/>
     </resources>
 </document>

@@ -33,13 +33,33 @@ class DetailViewController: UIViewController {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         UIApplication.sharedApplication().statusBarHidden = false
         
-        
+        print("HEY")
         
         setStatusBarBackgroundColor((UIColor(colorLiteralRed: 28/255, green: 228/255, blue: 208/255, alpha: 1)))
 
         // Do any additional setup after loading the view.
         modalView.hidden = true
+        
         foundButton.layer.cornerRadius = 25
+        
+        if state == true {
+            foundButton.titleLabel?.text = "I Recieved the Item"
+            
+            
+        }
+        else {
+            foundButton.titleLabel?.text = "Found This Item"
+            
+        }
+
+        
+//        if post!.user == PFUser.currentUser()! {
+//            print("Current")
+//        }
+//        else {
+//            print("Not current user")
+//        }
+        
         
     
     }
@@ -115,6 +135,7 @@ class DetailViewController: UIViewController {
         }
     
     @IBAction func sendIt(sender: AnyObject) {
+        if foundButton.titleLabel!.text == "Found This Item" {
         self.photoTakingHelper = PhotoTakingHelper(viewController: self) {(image:UIImage?) in
             guard let image = image else{
                 return
@@ -123,6 +144,15 @@ class DetailViewController: UIViewController {
             self.sendMessageCalled()
         }
 
+    }
+        else {
+            // delete post
+            
+            
+        }
+        
+        
+        
     }
     
     }

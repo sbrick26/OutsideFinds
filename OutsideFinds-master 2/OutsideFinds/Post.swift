@@ -19,3 +19,4 @@ class Post{
     var user: PFUser = PFUser.currentUser()!
     
 }
+

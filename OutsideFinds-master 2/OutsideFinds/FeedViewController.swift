@@ -11,6 +11,7 @@ import Parse
 
 var phoneNum = "4697197413"
 var lostObject = ""
+var state = false
 
 var timer: NSTimer!
 var refresher: UIRefreshControl!
@@ -126,6 +127,20 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                 // 2
                 let post = posts[indexPath.row]
                 // 3
+                
+                    if post.user.objectId == PFUser.currentUser()!.objectId {
+                        print("Current")
+                        var state = true
+                        
+                    }
+                    else {
+                        print("Not current user")
+                        print("POST USER: \(post.user)")
+                        print("CURRENT USER: \(PFUser.currentUser())")
+                        var state = false
+                        
+                    }
+                
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 // 4
                 detailViewController.post = post
@@ -178,6 +193,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     currentPost.price = object["itemPrice"] as! String
                     phoneNum = currentPost.user["phoneNumber"] as! String
                     lostObject = currentPost.name
+                    currentPost.user = object["user"] as! PFUser
                     
                     self.posts.insert(currentPost, atIndex: 0)
                     print("\(self.posts.count)")
