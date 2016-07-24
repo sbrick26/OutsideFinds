@@ -9,7 +9,11 @@
 import UIKit
 import Parse
 
+
+
 class CreateViewController: UIViewController {
+    
+    
 
     @IBOutlet weak var itemNameField: UITextField!
     @IBOutlet weak var bountyField: UITextField!
@@ -55,16 +59,6 @@ class CreateViewController: UIViewController {
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 }

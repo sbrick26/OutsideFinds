@@ -9,6 +9,7 @@
 import Foundation
 import Parse
 
+
 class Post{
     
     var name: String = ""
