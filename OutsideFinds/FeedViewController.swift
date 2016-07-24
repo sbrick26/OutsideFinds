@@ -86,7 +86,8 @@ class FeedViewController: UIViewController, UITableViewDataSource {
     }
     
     
-
+    @IBAction func unwindToFeed(segue: UIStoryboardSegue) {
+    }
     
     
     func getPosts(success: (Bool) -> Void) {

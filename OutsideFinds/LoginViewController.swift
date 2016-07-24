@@ -32,8 +32,8 @@ class LoginViewController: UIViewController {
     (user: PFUser?, error: NSError?) -> Void in
     if user != nil {
     // Do stuff after successful login.
-        let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Create View Controller") // again change to your view
-        self.showViewController(vc as! CreateViewController, sender: vc) // change again
+        let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("TabBarController") // again change to your view
+        self.showViewController(vc as! UITabBarController, sender: vc) // change again
 
     } else {
     // The login failed. Check error to see why.

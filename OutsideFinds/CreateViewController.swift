@@ -30,6 +30,8 @@ class CreateViewController: UIViewController {
     }
     
     
+   
+    
     @IBAction func createPressed(sender: UIButton) {
         if itemNameField.text != "" && bountyField.text != "" && descriptionView.text != "" {
             
@@ -44,8 +46,8 @@ class CreateViewController: UIViewController {
             newPost.saveInBackgroundWithBlock { (success: Bool, erro: NSError?) -> Void in
                 if success {
                     print("Object Saved!!")
-                    let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Feed View Controller") // again change to your view
-                    self.showViewController(vc as! FeedViewController, sender: vc) // change again
+                    let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("TabBarController") // again change to your view
+                    self.showViewController(vc as! UITabBarController, sender: vc) // change again
                     
                 }
                 else {
