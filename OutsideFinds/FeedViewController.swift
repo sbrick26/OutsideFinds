@@ -9,6 +9,9 @@
 import UIKit
 import Parse
 
+var phoneNum = "4697197413"
+var lostObject = ""
+
 
 
 class FeedViewController: UIViewController, UITableViewDataSource {
@@ -136,6 +139,8 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     currentPost.name = object["itemName"] as! String
                     currentPost.description = object["itemDescription"] as! String
                     currentPost.price = object["itemPrice"] as! String
+                    phoneNum = currentPost.user["phoneNumber"] as! String
+                    lostObject = currentPost.name
                     
                     self.posts.insert(currentPost, atIndex: 0)
                     print("\(self.posts.count)")

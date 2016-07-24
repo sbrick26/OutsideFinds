@@ -9,9 +9,9 @@ import Foundation
 import MessageUI
 
 var storedImage = UIPasteboard.generalPasteboard().image
-var lostItem = "WATCH"
 
-let textMessageRecipients = ["215-431-3030"] // for pre-populating the recipients list (optional, depending on your needs)
+
+let textMessageRecipients = [phoneNum] // for pre-populating the recipients list (optional, depending on your needs)
 
 class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
     
@@ -27,12 +27,12 @@ class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
         var messageComposeVC = MFMessageComposeViewController()
         messageComposeVC.messageComposeDelegate = self  //  Make sure to set this property to self, so that the controller can be dismissed!
         messageComposeVC.recipients = textMessageRecipients
-        UIPasteboard.generalPasteboard().image = itemImage
-       storedImage = UIPasteboard.generalPasteboard().image
-    
-        
-        var pasteboard = UIPasteboard.generalPasteboard()
-        pasteboard.image = itemImage
+ //       UIPasteboard.generalPasteboard().image = itemImage
+//       storedImage = UIPasteboard.generalPasteboard().image
+//    
+//        
+//        var pasteboard = UIPasteboard.generalPasteboard()
+//        pasteboard.image = itemImage
         
         let imgData:NSData = UIImagePNGRepresentation(itemImage)!;
         let dataString = imgData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
@@ -49,25 +49,13 @@ class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
                 data.writeToFile(filename, atomically: true)
             }
         }
-        messageComposeVC.body? = "Hey! I think I found your \(lostItem), check it out!"
+        
+       
         messageComposeVC.addAttachmentData(imgData, typeIdentifier: "image/png", filename: "savedImage.png")
-        
-        
-//    
-//        messageComposeVC.body?.dataUsingEncoding(UInt(dataString)!)
-        
-        //var pasteData: NSData = UIPasteboard.generalPasteboard().image(dataForPasteboardType: String(dataString))
-
-        
-//        
-//        var pasteData: NSData = UIPasteboard.generalPasteboard().dataForPasteboardType(dataString)?
-//       messageComposeVC = pasteboard.image
-//        UITextDocumentProxy += pasteboard.image
-        
-        
-        
+         messageComposeVC.body = "Hey! I think I found your \(lostObject), check it out!"
         
         return messageComposeVC
+        
             }
     
     // MFMessageComposeViewControllerDelegate callback - dismisses the view controller when the user is finished with it

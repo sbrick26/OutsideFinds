@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import Parse
+
+var thisPost = PFObject(className: "Post")
+var thisUser =  thisPost["user"]
+
+
 
 var itemImage: UIImage = UIImage(named: "Feed")!
 
@@ -72,6 +78,7 @@ class DetailViewController: UIViewController {
             itemImage = image
             self.sendMessageCalled()
             }
+        
         
         }
     
