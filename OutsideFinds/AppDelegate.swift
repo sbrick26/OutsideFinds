@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Parse
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_gdYTzsbpPveg1ZjxOG6WX8bX"
         
+
         let configuration = ParseClientConfiguration {
             $0.applicationId = "lost-and-found-outsidehacks"
             $0.server = "https://lost-and-found-outsidehacks.herokuapp.com/parse"

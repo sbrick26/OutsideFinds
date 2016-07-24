@@ -7,5 +7,6 @@ target 'OutsideFinds' do
 
   # Pods for OutsideFinds
 pod ‘Parse’
+pod ‘Stripe’
 
 end
