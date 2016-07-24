@@ -17,6 +17,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        let tap: UITapGestureRecognizer?
+        tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +29,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     @IBAction func loginPressed(sender: UIButton) {
     

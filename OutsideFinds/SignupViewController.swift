@@ -22,12 +22,20 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         usernameField.layer.cornerRadius = 10;
         signUpButton.layer.cornerRadius = 25;
+        
+        
+        let tap: UITapGestureRecognizer?
+        tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap!)
         
     }
     override func didReceiveMemoryWarning() {

@@ -13,7 +13,9 @@ import Parse
 
 class CreateViewController: UIViewController {
     
-    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
     @IBOutlet weak var itemNameField: UITextField!
     @IBOutlet weak var bountyField: UITextField!
@@ -22,6 +24,10 @@ class CreateViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tap: UITapGestureRecognizer?
+        tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap!)
     }
 
     override func didReceiveMemoryWarning() {
