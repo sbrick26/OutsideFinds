@@ -18,6 +18,7 @@ class Post{
     var claimed: Bool = false
     var user: PFUser = PFUser.currentUser()!
     var postId: String = ""
+    var phoneNumber: String = ""
     
 }
 

@@ -68,6 +68,7 @@ class CreateViewController: UIViewController {
             newPost["itemPrice"] = bountyField.text
             newPost["user"] = PFUser.currentUser()
             newPost["claimed"] = false
+            newPost["phoneNumber"] = PFUser.currentUser()!["phoneNumber"]
             
             
             newPost.saveInBackgroundWithBlock { (success: Bool, erro: NSError?) -> Void in

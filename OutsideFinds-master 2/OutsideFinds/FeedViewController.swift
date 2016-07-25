@@ -206,9 +206,13 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     currentPost.name = object["itemName"] as! String
                     currentPost.description = object["itemDescription"] as! String
                     currentPost.price = object["itemPrice"] as! String
-                    phoneNum = currentPost.user["phoneNumber"] as! String //if phone number screws up i think its here
+                    
+                     //if phone number screws up i think its here
+                    
                     lostObject = currentPost.name
                     currentPost.user = object["user"] as! PFUser
+//                    phoneNum = currentPost.user["phoneNumber"] as! String
+//                    print(phoneNum)
                     
                     //object.save()
                     
@@ -217,6 +221,8 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                         if success {
                             var ojId = object.objectId
                             currentPost.postId = ojId!
+                            currentPost.phoneNumber = object["phoneNumber"] as! String
+                            
                         }
                     }
                     

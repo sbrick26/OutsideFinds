@@ -1150,9 +1150,9 @@
                         <outlet property="firstNameField" destination="RaU-eh-oma" id="iv6-d7-FJ1"/>
                         <outlet property="lastNameField" destination="21m-XL-ADn" id="Fuo-WC-Ps3"/>
                         <outlet property="passwordField" destination="Hlm-t0-CbD" id="wP3-R9-s43"/>
-                        <outlet property="phoneNumberField" destination="21m-XL-ADn" id="RaU-y7-z53"/>
+                        <outlet property="phoneNumberField" destination="gC9-0R-Yrd" id="v8G-il-lpu"/>
                         <outlet property="signUpButton" destination="ObC-Ge-SSR" id="yV2-D5-g1z"/>
-                        <outlet property="usernameField" destination="RaU-eh-oma" id="PJt-8U-WSr"/>
+                        <outlet property="usernameField" destination="Nxk-FB-m6D" id="VnG-nO-Gqs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwp-qF-Jpa" sceneMemberID="firstResponder"/>
