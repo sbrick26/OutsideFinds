@@ -143,6 +143,7 @@ class DetailViewController: UIViewController {
     
     @IBAction func sendIt(sender: AnyObject) {
         if foundButton.titleLabel!.text == "Found This Item!" {
+            
         self.photoTakingHelper = PhotoTakingHelper(viewController: self) {(image:UIImage?) in
             guard let image = image else{
                 return
@@ -150,6 +151,8 @@ class DetailViewController: UIViewController {
             itemImage = image
             self.sendMessageCalled()
         }
+            modalView.hidden = true
+
 
     }
         else {

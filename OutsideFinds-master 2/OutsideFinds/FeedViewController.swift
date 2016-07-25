@@ -138,7 +138,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                 
                 let post = posts[indexPath.row]
                 // 3
-                
+                phoneNum = post.phoneNumber
                     if post.user.objectId == PFUser.currentUser()!.objectId {
                         print("Current")
                         state = true
@@ -211,6 +211,7 @@ class FeedViewController: UIViewController, UITableViewDataSource {
                     
                     lostObject = currentPost.name
                     currentPost.user = object["user"] as! PFUser
+                    
 //                    phoneNum = currentPost.user["phoneNumber"] as! String
 //                    print(phoneNum)
                     
